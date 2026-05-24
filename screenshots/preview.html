@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>网站截图预览 - Creator Site</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f0f23; color: #e8e8ed; font-family: 'PingFang SC','Microsoft YaHei',sans-serif; padding: 40px 20px; }
+  h1 { text-align: center; margin-bottom: 8px; font-size: 28px; background: linear-gradient(135deg,#6366f1,#a855f7,#ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .subtitle { text-align: center; color: #6b6b80; margin-bottom: 40px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; max-width: 1400px; margin: 0 auto; }
+  .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; }
+  .card img { width: 100%; display: block; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .card .label { padding: 14px 20px; font-size: 14px; color: #a0a0b8; }
+  .card .label strong { color: #e8e8ed; }
+  .full { grid-column: 1 / -1; }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    body { padding: 20px 10px; }
+  }
+</style>
+</head>
+<body>
+<h1>Creator Site — 截图预览</h1>
+<p class="subtitle">科技感渐变 · 毛玻璃 UI · 抖音创作者个人品牌站</p>
+
+<div class="grid">
+  <div class="card">
+    <img src="01-home.jpg" alt="首页 - 桌面端">
+    <div class="label"><strong>01</strong> · 首页 — 全屏 Hero + 精选作品 + 数据统计 + 社交条</div>
+  </div>
+  <div class="card">
+    <img src="02-works.jpg" alt="作品列表">
+    <div class="label"><strong>02</strong> · 作品列表 — 分类筛选 + 响应式卡片网格</div>
+  </div>
+  <div class="card">
+    <img src="03-about.jpg" alt="关于我">
+    <div class="label"><strong>03</strong> · 关于我 — 个人简介 + 数字动画 + 创作时间线</div>
+  </div>
+  <div class="card">
+    <img src="04-contact.jpg" alt="联系我">
+    <div class="label"><strong>04</strong> · 联系我 — 留言表单 + 社交链接 + 抖音二维码</div>
+  </div>
+  <div class="card">
+    <img src="05-work-detail.jpg" alt="作品详情">
+    <div class="label"><strong>05</strong> · 作品详情 — 视频/图片展示 + 数据统计 + 跳抖音</div>
+  </div>
+  <div class="card">
+    <img src="06-mobile-home.jpg" alt="移动端首页">
+    <div class="label"><strong>06</strong> · 移动端首页 — iPhone 14 视口 (390×844)</div>
+  </div>
+</div>
+</body>
+</html>
